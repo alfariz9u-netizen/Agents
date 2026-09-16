@@ -1,18 +1,22 @@
 {
   "name": "universal-digital-agent",
   "version": "1.0.0",
-  "description": "A single autonomous digital agent with capability routing, token/model governance, memory+semantic cache, permissions, verification, and connectors to real external platforms (The Colony, Artifact Council, OpenTask, AgenC, AgentBazaar, Azure Marketplace, GitHub, Molt Market, MCP, A2A).",
+  "description": "A single autonomous digital agent with capability routing, token/model governance, memory+semantic cache, permissions, verification, and connectors to real external platforms.",
   "main": "src/index.js",
   "type": "commonjs",
   "engines": {
     "node": ">=18.0.0"
   },
   "scripts": {
-    "start": "node src/index.js",
+    "start": "node src/telegramBot.js",
     "telegram": "node src/telegramControlBot.js",
     "test": "for f in test/*.test.js; do node \"$f\" || exit 1; done"
   },
-  "dependencies": {},
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "node-telegram-bot-api": "^0.66.0"
+  },
   "optionalDependencies": {},
   "license": "UNLICENSED",
   "private": true
