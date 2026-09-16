@@ -9,6 +9,7 @@
   },
   "scripts": {
     "start": "node src/index.js",
+    "telegram": "node src/telegramControlBot.js",
     "test": "for f in test/*.test.js; do node \"$f\" || exit 1; done"
   },
   "dependencies": {},
